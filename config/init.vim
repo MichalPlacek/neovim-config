@@ -74,6 +74,8 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 " telescope end
 
+Plug 'L3MON4D3/LuaSnip'
+
 if is_typescript == 1
 Plug 'neovim/nvim-lspconfig'
 " not more support Plug 'nvim-lua/completion-nvim'
