@@ -87,12 +87,6 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'saadparwaiz1/cmp_luasnip'
 " end completion
-" A light-weight lsp plugin based on neovim built-in lsp with highly a performant UI.
-Plug 'tami5/lspsaga.nvim' , { 'branch': 'nvim6.0' }
-" glepnir is off....."
-"Plug 'glepnir/lspsaga.nvim'
-"  Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
-
 endif
 
 if is_git == 1
@@ -102,6 +96,7 @@ if is_git == 1
   " git integration for NERDTree
   Plug 'Xuyuanp/nerdtree-git-plugin'
 endif
+
 " nerd font
 "https://github.com/ryanoasis/vim-devicons
 "fonts : https://www.nerdfonts.com/font-downloads
@@ -125,19 +120,16 @@ if is_typescript == 1
 set completeopt=menu,menuone,noselect
 lua require("lsp-config")
 lua require("cmp-config")
-lua require("lspsaga-config")
 lua require("telescope-config")
 lua require("lualine-config")
 
 " saga code action
-nnoremap <silent><leader>ca <cmd>lua require('lspsaga.codeaction').code_action()<CR>
-vnoremap <silent><leader>ca :<C-U>lua require('lspsaga.codeaction').range_code_action()<CR>
-nnoremap <silent><leader>rn <cmd>lua require('lspsaga.rename').rename()<CR>
-nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
-nnoremap <silent> K <cmd>lua require('lspsaga.hover').render_hover_doc()<CR>
-nnoremap <silent> [e <cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>
-nnoremap <silent> ]e <cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>
-nnoremap <silent><leader>dl <cmd>lua require'lspsaga.diagnostic'.show_line_diagnostics()<CR>
+nnoremap <silent><leader>ca <cmd>lua vim.lsp.buf.code_action()<CR>
+nnoremap <silent><leader>rn <cmd>lua vim.lsp.buf.rename()<CR>
+nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> [e <cmd>lua vim.diagnostic.goto_prev()<CR>
+nnoremap <silent> ]e <cmd>lua vim.diagnostic.goto_next()<CR>
+nnoremap <silent><leader>dl <cmd>lua vim.diagnostic.open_float()<CR>
 
 " lsp action
 nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
