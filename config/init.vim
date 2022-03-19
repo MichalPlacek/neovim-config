@@ -139,7 +139,7 @@ nnoremap <silent> gi <cmd>lua vim.lsp.buf.implementation()<CR>
 command! -nargs=0 Fr :lua vim.lsp.buf.formatting()<CR>
 
   " Telescope
-  nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+  nnoremap <leader>ff <cmd>lua require('telescope.builtin').git_files()<cr>
   nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
   " I use fzf without preview (for long buffer names)
 autocmd VimEnter * command! -bang -nargs=? Buffers call fzf#vim#buffers(<q-args>, {'options': '--no-preview'}, <bang>0)
