@@ -19,6 +19,10 @@
         c = cmp.mapping.close(),
       }),
       ['<CR>'] = cmp.mapping.confirm({ select = true }),
+       -- fix https://stackoverflow.com/questions/71914213/nvim-completion-menu-issue
+      ['<C-n>'] = cmp.mapping(cmp.mapping.select_next_item()),
+      ['<C-p>'] = cmp.mapping(cmp.mapping.select_prev_item()),
+      -- end fix
    },
 
     sources = cmp.config.sources({
