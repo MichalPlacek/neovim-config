@@ -17,3 +17,6 @@
 - [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
 - ....
+
+# Plugin mangaer:
+https://github.com/junegunn/vim-plug
