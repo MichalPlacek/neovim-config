@@ -18,5 +18,5 @@
 - [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
 - ....
 
-# Plugin mangaer:
+# Plugin manger:
 https://github.com/junegunn/vim-plug
