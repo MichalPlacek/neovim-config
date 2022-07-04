@@ -20,3 +20,8 @@
 
 # Plugin manger:
 https://github.com/junegunn/vim-plug
+
+#For telescope:
+https://github.com/BurntSushi/ripgrep
+fedora: sudo dnf install ripgrep
+
