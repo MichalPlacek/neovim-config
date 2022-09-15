@@ -8,6 +8,7 @@ let is_typescript = 1
 " npm i -g eslint_d prettier
 let is_git = 1
 let is_lua = 1
+let is_flutter = 1
 
 set nocompatible
 
@@ -97,6 +98,10 @@ if is_git == 1
   Plug 'Xuyuanp/nerdtree-git-plugin'
 endif
 
+if is_flutter == 1
+  Plug 'akinsho/flutter-tools.nvim'
+endif
+
 " nerd font
 "https://github.com/ryanoasis/vim-devicons
 "fonts : https://www.nerdfonts.com/font-downloads
@@ -114,6 +119,10 @@ if is_git ==1
 end
 if is_lua ==1
   lua require("lsp-lua-config")
+endif
+
+if is_flutter ==1
+  lua require("lsp-flutter-config")
 endif
 
 if is_typescript == 1
