@@ -11,16 +11,8 @@ let is_lua = 1
 let is_flutter = 1
 let is_java =1
 
-set nocompatible
-
 lua require("basic-config")
 
-set cursorline
-
-" Turn backup off
-set nobackup
-set nowb
-set noswapfile
 
 " Spell
 set spell
@@ -34,16 +26,6 @@ set fileencoding=utf-8
 "prefer unix codding
 set ffs=unix,dos
 
-" Converting tabs to spaces
-set expandtab
-set tabstop=2
-
-" quick switch windows
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
-map <c-h> <c-w>h
-
 "map <Esc> to exit terminal-mode:
 tnoremap <Esc> <C-\><C-n>
 
@@ -56,7 +38,8 @@ autocmd FileChangedShellPost *
 
 call plug#begin()
 
-Plug 'preservim/NERDTree'
+Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
+Plug 'nvim-tree/nvim-tree.lua'
 
 Plug 'morhetz/gruvbox'
 
@@ -79,16 +62,16 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'L3MON4D3/LuaSnip'
 
 if is_typescript == 1
-Plug 'neovim/nvim-lspconfig'
-" not more support Plug 'nvim-lua/completion-nvim'
-" completion
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'saadparwaiz1/cmp_luasnip'
-" end completion
+  Plug 'neovim/nvim-lspconfig'
+  " not more support Plug 'nvim-lua/completion-nvim'
+  " completion
+  Plug 'hrsh7th/cmp-nvim-lsp'
+  Plug 'hrsh7th/cmp-buffer'
+  Plug 'hrsh7th/cmp-path'
+  Plug 'hrsh7th/cmp-cmdline'
+  Plug 'hrsh7th/nvim-cmp'
+  Plug 'saadparwaiz1/cmp_luasnip'
+  " end completion
 endif
 
 if is_git == 1
@@ -112,8 +95,7 @@ endif
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
-map <F5> :NERDTreeToggle<CR>
-map <F4> :NERDTreeFind<CR>
+lua require("nvim-tree-config")
 
 " Color scheme from: https://srcery-colors.github.io/
 "colorscheme srcery
@@ -164,3 +146,4 @@ autocmd VimEnter * command! -bang -nargs=? Buffers call fzf#vim#buffers(<q-args>
 
 endif
 
+lua require("key-mapping")
