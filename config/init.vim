@@ -9,6 +9,7 @@ let is_typescript = 1
 let is_git = 1
 let is_lua = 1
 let is_flutter = 1
+let is_java =1
 
 set nocompatible
 
@@ -102,6 +103,9 @@ if is_flutter == 1
   Plug 'akinsho/flutter-tools.nvim'
 endif
 
+if is_java == 1
+  Plug 'mfussenegger/nvim-jdtls'
+endif
 " nerd font
 "https://github.com/ryanoasis/vim-devicons
 "fonts : https://www.nerdfonts.com/font-downloads
@@ -109,6 +113,7 @@ Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 map <F5> :NERDTreeToggle<CR>
+map <F4> :NERDTreeFind<CR>
 
 " Color scheme from: https://srcery-colors.github.io/
 "colorscheme srcery
