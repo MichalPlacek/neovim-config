@@ -1,7 +1,7 @@
 # neovim-config
 
 ## Plugins used
-- [preservim/NERDTree](https://github.com/preservim/nerdtree) 
+- [nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) 
 - [morhetz/gruvbox](https://github.com/morhetz/gruvbox) 
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) 
 - [junegunn/fzf](https://github.com/junegunn/fzf) 
