@@ -15,15 +15,18 @@ Plug 'nvim-lualine/lualine.nvim'
 -- TODO maybe should remove ? 
 -- Plug 'kyazdani42/nvim-web-devicons'
 -- lualine end
-Plug('junegunn/fzf', {['do'] = 'fzf#install()'})
+-- *Plug('junegunn/fzf', {['do'] = 'fzf#install()'})
 --TODO fix id fzf..
 -- in vim: Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+--* Plug 'junegunn/fzf.vim'
 
 
 -- telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+
+Plug ('nvim-telescope/telescope-fzf-native.nvim', { ['do'] = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' })
+-- also install https://github.com/BurntSushi/ripgrep
 -- telescope end
 
 Plug 'L3MON4D3/LuaSnip'
