@@ -45,6 +45,9 @@ if config.isJava or config.isLua or config.isTypescript or config.isFlutter then
   keymap.set("n", "<leader>fh","<cmd>lua require('telescope.builtin').help_tags()<CR>")  
   keymap.set("n", "<leader>fr","<cmd>lua require('telescope.builtin').lsp_references()<CR>")  
 
+-- Outline
+  keymap.set("n", "<F12>","<cmd>AerialToggle!<CR>")  
+
 end
 
 

@@ -31,8 +31,9 @@ lua require("nvim-tree-config")
 
 " Color scheme from: https://srcery-colors.github.io/
 "colorscheme srcery
-colorscheme gruvbox
-set background=dark
+lua vim.cmd([[colorscheme gruvbox]])
+lua vim.o.background = 'dark'
+
 if is_git ==1 
     lua require("gitsigns-config")
 end
@@ -50,6 +51,7 @@ lua require("lsp-config")
 lua require("cmp-config")
 lua require("telescope-config")
 lua require("lualine-config")
+lua require("aerial-config")
 
 endif
 

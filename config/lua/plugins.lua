@@ -42,6 +42,10 @@ if config.isJava or config.isLua or config.isTypescript or config.isFlutter then
   Plug 'hrsh7th/nvim-cmp'
   Plug 'saadparwaiz1/cmp_luasnip'
   -- end completion
+  
+  -- outline window
+  Plug 'stevearc/aerial.nvim'
+
 end
 if config.isGit then
   Plug 'tpope/vim-fugitive'
@@ -59,6 +63,7 @@ if config.isJava then
   Plug 'mfussenegger/nvim-jdtls'
   Plug 'mfussenegger/nvim-dap'
 end
+
 -- nerd font
 --https://github.com/ryanoasis/vim-devicons
 --fonts : https://www.nerdfonts.com/font-downloads
