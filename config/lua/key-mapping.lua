@@ -1,8 +1,8 @@
 local config = require 'config'
 local keymap = vim.keymap
 
-keymap.set("n", "<F5>", ":NvimTreeToggle<CR>")
-keymap.set("n", "<F4>", ":NvimTreeFindFile<CR>")
+keymap.set("n", "<F5>", ":Neotree toggle=true<CR>")
+keymap.set("n", "<F4>", ":Neotree reveal=true<CR>")
 
 -- Quick switch windows
 keymap.set("n", "<c-j>", "<c-w>j")  

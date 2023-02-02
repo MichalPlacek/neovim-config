@@ -5,7 +5,9 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 
 
 Plug 'nvim-tree/nvim-web-devicons' -- optional, for file icons
-Plug 'nvim-tree/nvim-tree.lua'
+--Plug 'nvim-tree/nvim-tree.lua'
+Plug 'MunifTanjim/nui.nvim' -- optional, for file icons
+Plug ('nvim-neo-tree/neo-tree.nvim', { branch = 'v2.x' })
 
 Plug 'morhetz/gruvbox'
 
