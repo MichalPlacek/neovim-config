@@ -9,7 +9,8 @@ opt.cursorline = true -- Show cursorline
 
 -- Converting tabs to spaces
 opt.expandtab = true
-opt.tabstop = 4
+opt.tabstop = 2
+opt.shiftwidth = 2
 
 -- Turn backup off
 opt.writebackup = false
