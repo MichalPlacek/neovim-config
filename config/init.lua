@@ -4,8 +4,6 @@ require("basic-config")
 
 require("plugins")
 
-require("nvim-tree-config")
-
 vim.cmd([[colorscheme gruvbox]])
 vim.o.background = 'dark'
 
