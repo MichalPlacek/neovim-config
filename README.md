@@ -21,7 +21,30 @@
 # Plugin manger:
 https://github.com/junegunn/vim-plug
 
-#For telescope:
+# For telescope:
 https://github.com/BurntSushi/ripgrep
 fedora: sudo dnf install ripgrep
 
+# Additionals
+
+## Fonts:
+https://www.nerdfonts.com/font-downloads
+Source Code Pro
+Sauce Code Pro Nerd Font Complete
+
+## Java:
+Download: https://jdk.java.net/
+
+## Lua
+sudo dnf install gcc g++ clang ninja-build
+Download and compile:
+git clone https://github.com/sumneko/lua-language-server
+cd lua-language-server 
+git submodule update --init --recursive
+cd 3rd/luamake
+compile/install.sh
+if error "cannot find -lstdc++" then sudo dnf install glibc-static libstdc++-static 
+cd ../..
+./3rd/luamake/luamake rebuild
+
+--set path in lsp-lua-config file.
