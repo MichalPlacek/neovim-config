@@ -32,7 +32,7 @@ https://www.nerdfonts.com/font-downloads
 Source Code Pro
 Sauce Code Pro Nerd Font Complete
 
-## Java:
+## Java
 Download: https://jdk.java.net/
 
 ## Lua
@@ -48,3 +48,7 @@ cd ../..
 ./3rd/luamake/luamake rebuild
 
 --set path in lsp-lua-config file.
+
+## Python
+sudo npm i -g pyright
+

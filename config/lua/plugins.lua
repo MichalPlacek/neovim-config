@@ -33,7 +33,7 @@ Plug ('nvim-telescope/telescope-fzf-native.nvim', { ['do'] = 'cmake -S. -Bbuild 
 
 Plug 'L3MON4D3/LuaSnip'
 
-if config.isJava or config.isLua or config.isTypescript or config.isFlutter then
+if config.isJava or config.isLua or config.isTypescript or config.isFlutter or config.isPython then
   Plug 'neovim/nvim-lspconfig'
   -- not more support Plug 'nvim-lua/completion-nvim'
   -- completion

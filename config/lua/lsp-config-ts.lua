@@ -52,7 +52,6 @@ require('lspconfig').diagnosticls.setup {
       less = 'prettier',
       typescript = 'eslint_d',
       typescriptreact = 'eslint_d',
-      json = 'prettier',
       markdown = 'prettier',
     }
   }

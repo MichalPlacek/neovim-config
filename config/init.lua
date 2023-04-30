@@ -16,16 +16,19 @@ if config.isLua then
    require("lsp-lua-config")
 end
 
-
 if config.isFlutter then
   require("lsp-flutter-config")
+end
+
+if config.isPython then
+  require("lsp-python-config")
 end
 
 
 if config.isJava or config.isLua or config.isTypescript or config.isFlutter then
   vim.opt.completeopt = {'menu','menuone', 'noselect'}
 
-  require("lsp-config")
+  require("lsp-config-ts")
   require("cmp-config")
   require("telescope-config")
   require("lualine-config")
