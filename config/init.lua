@@ -22,6 +22,7 @@ end
 
 if config.isPython then
   require("lsp-python-config")
+  require("dap-python-config")
 end
 
 

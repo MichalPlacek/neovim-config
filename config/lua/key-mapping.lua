@@ -23,7 +23,7 @@ if config.isJava then
   keymap.set("v", "<leader>jec","<Esc><Cmd>lua require('jdtls').extract_constant(true)<CR>", { silent = true })  
 end
 
-if config.isJava or config.isLua or config.isTypescript or config.isFlutter then
+if config.isJava or config.isLua or config.isTypescript or config.isFlutter or config.isPython then
   -- saga code action
   keymap.set("n", "<leader>ca","<cmd>lua vim.lsp.buf.code_action()<CR>", { silent = true })
   keymap.set("n", "<leader>rn","<cmd>lua vim.lsp.buf.rename()<CR>", { silent = true })
@@ -44,6 +44,12 @@ if config.isJava or config.isLua or config.isTypescript or config.isFlutter then
   keymap.set("n", "<leader>fb","<cmd>lua require('telescope.builtin').buffers()<CR>")  
   keymap.set("n", "<leader>fh","<cmd>lua require('telescope.builtin').help_tags()<CR>")  
   keymap.set("n", "<leader>fr","<cmd>lua require('telescope.builtin').lsp_references()<CR>")  
+
+-- Debug
+  keymap.set('n', '<F9>',"<cmd>lua require('dap').continue()<CR>")
+  keymap.set('n', '<F8>',"<cmd>lua require('dap').step_over()<CR>")
+  keymap.set('n', '<F7>',"<cmd>lua require('dap').step_into()<CR>")
+  keymap.set('n', '<S-F8>',"<cmd>lua require('dap').step_out()<CR>")
 
 -- Outline
   keymap.set("n", "<F12>","<cmd>AerialToggle!<CR>")  

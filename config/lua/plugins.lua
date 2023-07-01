@@ -66,6 +66,12 @@ if config.isJava then
   Plug 'mfussenegger/nvim-dap'
 end
 
+if config.isPython then
+  Plug 'mfussenegger/nvim-dap-python'
+  Plug 'mfussenegger/nvim-dap'
+end
+
+
 -- nerd font
 --https://github.com/ryanoasis/vim-devicons
 --fonts : https://www.nerdfonts.com/font-downloads
