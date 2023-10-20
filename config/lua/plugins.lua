@@ -34,6 +34,9 @@ Plug ('nvim-telescope/telescope-fzf-native.nvim', { ['do'] = 'cmake -S. -Bbuild 
 Plug 'L3MON4D3/LuaSnip'
 
 if config.isJava or config.isLua or config.isTypescript or config.isFlutter or config.isPython then
+  -- copilot
+  Plug 'github/copilot.vim'
+
   Plug 'neovim/nvim-lspconfig'
   -- not more support Plug 'nvim-lua/completion-nvim'
   -- completion
@@ -69,6 +72,11 @@ end
 if config.isPython then
   Plug 'mfussenegger/nvim-dap-python'
   Plug 'mfussenegger/nvim-dap'
+  Plug 'nvim-telescope/telescope-dap.nvim'
+  Plug 'rcarriga/nvim-dap-ui'
+  -- for formatting:
+  Plug 'jose-elias-alvarez/null-ls.nvim'
+  Plug ('williamboman/mason.nvim', { ['do'] = ':MasonUpdate' })
 end
 
 

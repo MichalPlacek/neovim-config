@@ -35,6 +35,13 @@ if config.isJava or config.isLua or config.isTypescript or config.isFlutter then
   require("lualine-config")
   require("aerial-config")
 
+  require("null-ls-config")
+
+  require("dapui").setup()
+
+  require("mason").setup()
+
+
 end
 
 require("key-mapping")
