@@ -34,7 +34,9 @@ Sauce Code Pro Nerd Font Complete
 
 ## Java
 Download: https://jdk.java.net/
-
+Lombok: https://projectlombok.org/download
+Jdtls: https://github.com/eclipse-jdtls/eclipse.jdt.ls
+Formatter: https://github.com/google/styleguide/blob/gh-pages/eclipse-java-google-style.xml
 ## Lua
 sudo dnf install gcc g++ clang ninja-build
 Download and compile:
