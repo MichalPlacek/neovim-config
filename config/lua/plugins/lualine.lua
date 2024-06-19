@@ -1,5 +1,8 @@
-require'lualine'.setup {
-  options = {
+return {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+      opts = {
+    options = {
     icons_enabled = true,
     theme = 'auto',
     component_separators = { left = '', right = ''},
@@ -39,4 +42,5 @@ require'lualine'.setup {
     lualine_z = {'tabs'}
   },
   extensions = {}
+      }
 }

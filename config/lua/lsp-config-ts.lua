@@ -1,4 +1,4 @@
-require('lspconfig').tsserver.setup{on_attach=on_attach}
+require('lspconfig').tsserver.setup{}
 
 require('lspconfig').diagnosticls.setup {
   on_attach = on_attach,

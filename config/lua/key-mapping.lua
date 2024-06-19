@@ -45,15 +45,6 @@ if config.isJava or config.isLua or config.isTypescript or config.isFlutter or c
   keymap.set("n", "<leader>fh","<cmd>lua require('telescope.builtin').help_tags()<CR>")  
   keymap.set("n", "<leader>fr","<cmd>lua require('telescope.builtin').lsp_references()<CR>")  
 
--- Debug
-  keymap.set('n', '<F9>',"<cmd>lua require('dap').continue()<CR>")
-  keymap.set('n', '<F8>',"<cmd>lua require('dap').step_over()<CR>")
-  keymap.set('n', '<F7>',"<cmd>lua require('dap').step_into()<CR>")
-  keymap.set('n', '<S-F8>',"<cmd>lua require('dap').step_out()<CR>")
-
--- Outline
-  keymap.set("n", "<F12>","<cmd>AerialToggle!<CR>")  
-
 end
 
 
