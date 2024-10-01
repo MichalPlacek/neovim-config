@@ -19,7 +19,7 @@
 - ....
 
 # Plugin manger:
-https://github.com/junegunn/vim-plug
+https://github.com/folke/lazy.nvim
 
 # For telescope:
 https://github.com/BurntSushi/ripgrep
