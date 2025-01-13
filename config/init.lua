@@ -8,6 +8,9 @@ require("plugins-lazy")
 vim.cmd([[colorscheme gruvbox]])
 vim.o.background = 'dark'
 
+-- for avante plugin
+-- views can only be fully collapsed with the global statusline
+vim.opt.laststatus = 3
 
 
 if config.isLua then
