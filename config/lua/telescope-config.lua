@@ -1,4 +1,10 @@
 local config = require 'config'
---telescope not search in node modules
-require('telescope').setup{ defaults = { file_ignore_patterns = {"node_modules","dist",".git",".idea",".husky"} } }
 
+require('telescope').setup{ 
+  defaults = { 
+    file_ignore_patterns = {
+      "node_modules","dist",".git",".idea",".husky",
+      "__pycache__", ".venv", "*.pyc", ".pytest_cache"
+    } 
+  } 
+}

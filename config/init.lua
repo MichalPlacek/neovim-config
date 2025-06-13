@@ -18,7 +18,7 @@ if config.isPython then
 
   require("cmp-config")
   require("telescope-config")
-
+  require("treesitter") 
 
 end
 
