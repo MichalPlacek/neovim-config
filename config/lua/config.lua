@@ -1,7 +1,5 @@
 local config =
 {
-        isJava = true,
-        isLua = true,
         isTypescript = true,
         isFlutter = false,
         isGit = true,

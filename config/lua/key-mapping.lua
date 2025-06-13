@@ -13,17 +13,7 @@ keymap.set("n", "<c-h>", "<c-w>h")
 --map <Esc> to exit terminal-mode:
 keymap.set("t", "<Esc>","<C-\\><C-n>")
 
-if config.isJava then
-  -- jdtls actions 
-  keymap.set("n", "<leader>joi","<cmd>lua require('jdtls').organize_imports()<CR>", { silent = true })  
-  keymap.set("v", "<leader>jem","<Esc><Cmd>lua require('jdtls').extract_method(true)<CR>", { silent = true })  
-  keymap.set("n", "<leader>jev","<Cmd>lua require('jdtls').extract_variable()<CR>", { silent = true })  
-  keymap.set("v", "<leader>jev","<Esc><Cmd>lua require('jdtls').extract_variable(true)<CR>", { silent = true })  
-  keymap.set("n", "<leader>jec","<Cmd>lua require('jdtls').extract_constant()<CR>", { silent = true })  
-  keymap.set("v", "<leader>jec","<Esc><Cmd>lua require('jdtls').extract_constant(true)<CR>", { silent = true })  
-end
-
-if config.isJava or config.isLua or config.isTypescript or config.isFlutter or config.isPython then
+if config.isTypescript or config.isFlutter or config.isPython then
   -- saga code action
   keymap.set("n", "<leader>ca","<cmd>lua vim.lsp.buf.code_action()<CR>", { silent = true })
   keymap.set("n", "<leader>rn","<cmd>lua vim.lsp.buf.rename()<CR>", { silent = true })

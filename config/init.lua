@@ -13,10 +13,6 @@ vim.o.background = 'dark'
 vim.opt.laststatus = 3
 
 
-if config.isLua then
-   require("lsp-lua-config")
-end
-
 if config.isJava or config.isLua or config.isTypescript or config.isFlutter then
   vim.opt.completeopt = {'menu','menuone', 'noselect'}
 
