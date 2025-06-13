@@ -13,7 +13,7 @@ keymap.set("n", "<c-h>", "<c-w>h")
 --map <Esc> to exit terminal-mode:
 keymap.set("t", "<Esc>","<C-\\><C-n>")
 
-if config.isTypescript or config.isFlutter or config.isPython then
+if config.isPython then
   -- saga code action
   keymap.set("n", "<leader>ca","<cmd>lua vim.lsp.buf.code_action()<CR>", { silent = true })
   keymap.set("n", "<leader>rn","<cmd>lua vim.lsp.buf.rename()<CR>", { silent = true })

@@ -13,10 +13,9 @@ vim.o.background = 'dark'
 vim.opt.laststatus = 3
 
 
-if config.isJava or config.isLua or config.isTypescript or config.isFlutter then
+if config.isPython then
   vim.opt.completeopt = {'menu','menuone', 'noselect'}
 
-  require("lsp-config-ts")
   require("cmp-config")
   require("telescope-config")
 
