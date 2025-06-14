@@ -16,6 +16,9 @@ opt.shiftwidth = 2
 opt.writebackup = false
 opt.swapfile = false
 
+-- Better colors
+opt.termguicolors = true
+
 -- Trigger `autoread` when files changes on disk
 vim.o.autoread = true
 vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {

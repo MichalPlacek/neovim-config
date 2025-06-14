@@ -15,10 +15,16 @@ keymap.set("t", "<Esc>","<C-\\><C-n>")
 
 if config.isPython then
 
-  -- Avante keybindings (DODAJ TO)
+  -- Avante keybindings 
   keymap.set("n", "<leader>aa", ":AvanteAsk<CR>", { silent = true })
+  keymap.set("v", "<leader>aa", ":AvanteAsk<CR>", { silent = true }) 
   keymap.set("v", "<leader>ae", ":AvanteEdit<CR>", { silent = true })
   keymap.set("n", "<leader>ac", ":AvanteChat<CR>", { silent = true })
+  keymap.set("n", "<leader>at", function()
+    require("avante").toggle()
+  end, { silent = true })  -- Toggle Avante sidebar
+
+  keymap.set("v", "<leader>ar", ":AvanteRefresh<CR>", { silent = true })  -- Refresh w trybie visual
 
   -- saga code action
   keymap.set("n", "<leader>ca","<cmd>lua vim.lsp.buf.code_action()<CR>", { silent = true })
