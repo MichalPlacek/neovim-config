@@ -32,6 +32,12 @@ https://www.nerdfonts.com/font-downloads
 Source Code Pro
 Sauce Code Pro Nerd Font Complete
 
+mkdir -p ~/.local/share/fonts
+
+unzip nazwa_czcionki.zip -d ~/.local/share/fonts/
+
+fc-cache -fv
+
 ## Java
 Download: https://jdk.java.net/
 Lombok: https://projectlombok.org/download
