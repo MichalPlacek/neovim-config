@@ -60,3 +60,5 @@ cd ../..
 ## Python
 sudo npm i -g pyright
 
+conda install anaconda::black
+conda install conda-forge::isort
