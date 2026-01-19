@@ -1,6 +1,5 @@
 local config =
 {
-        isGit = true,
         isPython = true
 }
 
