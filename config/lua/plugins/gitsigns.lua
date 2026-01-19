@@ -3,12 +3,14 @@ return {
     event = { 'BufReadPre', 'BufNewFile' },
     opts = {
         signs = {
-            add          = { text = '│' },
-            change       = { text = '│' },
+            add          = { text = '┃' },
+            change       = { text = '┃' },
             delete       = { text = '_' },
             topdelete    = { text = '‾' },
             changedelete = { text = '~' },
         },
+        numhl = true,  -- Highlight line numbers
+        signcolumn = true,
         on_attach = function(bufnr)
             local gs = package.loaded.gitsigns
 

@@ -2,7 +2,6 @@ local config = require 'config'
 
 require("basic-config")
 
-
 require("plugins-lazy")
 
 vim.cmd([[colorscheme gruvbox]])

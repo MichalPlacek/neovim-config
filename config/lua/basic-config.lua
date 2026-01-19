@@ -6,6 +6,7 @@ opt.ignorecase = true  -- Ignore case letters when search
 opt.smartcase = true  -- Ignore lowercase for the whole pattern
 opt.mouse = 'a'  -- Enable mouse support
 opt.cursorline = true -- Show cursorline
+opt.signcolumn = 'yes' -- Always show sign column (for gitsigns, diagnostics)
 
 -- Converting tabs to spaces
 opt.expandtab = true
