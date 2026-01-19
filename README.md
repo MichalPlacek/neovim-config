@@ -19,6 +19,7 @@
 - [stevearc/conform.nvim](https://github.com/stevearc/conform.nvim)
 - [yetone/avante.nvim](https://github.com/yetone/avante.nvim)
 - [m4xshen/hardtime.nvim](https://github.com/m4xshen/hardtime.nvim)
+- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 
 ## Plugin manager
 https://github.com/folke/lazy.nvim
